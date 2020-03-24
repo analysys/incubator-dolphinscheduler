@@ -82,6 +82,8 @@
 		<commons.lang.version>2.3</commons.lang.version>
 		<commons.lang3.version>3.5</commons.lang3.version>
 		<commons.httpclient>3.0.1</commons.httpclient>
+		<maven-dependency-plugin.version>3.1.1</maven-dependency-plugin.version>
+		<rpm-maven-plugion.version>2.2.0</rpm-maven-plugion.version>
 		<commons.beanutils.version>1.7.0</commons.beanutils.version>
 		<commons.configuration.version>1.10</commons.configuration.version>
 		<commons.email.version>1.5</commons.email.version>
@@ -588,7 +590,19 @@
 				</dependencies>
 			</plugin>
 
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>rpm-maven-plugin</artifactId>
+				<version>${rpm-maven-plugion.version}</version>
+				<inherited>false</inherited>
+			</plugin>
 
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>${maven-dependency-plugin.version}</version>
+
+			</plugin>
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
